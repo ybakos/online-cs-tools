@@ -2,7 +2,7 @@
 
 [Repl.it](repl.it) is a tool that allows instructors to embed interactive code within web pages. It will work in Canvas, HTML pages, really anywhere that an iframe or oEmbed is supported.
 
-Instructors are strongly encourage to make any code example that exists within course content interactive if possible. 
+Instructors are strongly encouraged to make any code example that exists within course content interactive if possible. 
 
 There are two main ways to display Repls (a code example on Repl.it is called a Repl). One is purely to demonstrate code and to potentially let students tinker with it and it looks like this
 
