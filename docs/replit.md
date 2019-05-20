@@ -1,3 +1,8 @@
+---
+title: Repl.it Setup
+---
+
+
 # Repl.it
 
 [Repl.it](repl.it) is a tool that allows instructors to embed interactive code within web pages. It will work in Canvas, HTML pages, really anywhere that an iframe or oEmbed is supported.
@@ -41,3 +46,7 @@ Individual Repls can not be easily cloned.
 To that end **it is suggested** that you keep a class GitHub repository with the code that you use in your Repls. This is mainly a fallback in case we need to rebuild Repls.
 
 It may seem burdensome, but in fact you may find it easier to develop the code for the Repls locally then copy it to a Repl. If you are doing this, then when you complete the code for a Repl, just save each file in a way where you can tell what module it belongs to and periodically commit that directory with those files to the GitHub repo.
+
+## Issues
+
+- A common strategy for unit testing code which deals with input and output is to redirect `stdout`. It appears that this should generally be avoided in Repl.it unit tests. They seem to produce inconsistent and incorrect results if at any point `stdout` is redirect, even calls to redirect and reset it immediately sandwich the call to the function under test. There may be a good solution to this, but this far it seems elusive.
