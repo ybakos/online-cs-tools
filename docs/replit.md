@@ -31,9 +31,12 @@ It also does not solve the problem with embeddable non-assignment Repls as these
 The following are the steps to begin using Repl.it in a new class.
 
 1. Confirm with program leadership that the course does not have a preexisting Repl.it account.
-1. Email the technology lead asking for a **mailing list** to be created for the course. It will be of the form `coe_cs[course number]@oregonstate.edu`.
+1. Email the technology lead (currently Justin Wolford wolfordj@oregonstate.edu) asking for a **mailing list** to be created for the course. It will be of the form `coe_cs[course number]@oregonstate.edu`.
 1. Make sure you sign up for and become an administrator of the mailing list.
-1. Create a Repl.it account using the same name (eg. coe_cs511) and sign up using the mailing list address and a password that is unique and can be shared with other instructors in the course
+  - This should be handled for you when the mailing list is created for you.
+  - You can confirm you are an admin of the list by accessing `https://secure.engr.oregonstate.edu/mailman/admin/YOUR_MAILING_LIST`. If you can log into this page you are an administrator.
+  - If you ever need to add or change administrators that is done via the **General Option** page.
+1. Create a Repl.it account using the same name (eg. coe_cs511) and sign up using the mailing list address and a password that is unique and can be shared with other instructors in the course.
 1. Email the online program technology lead to get that account signed up as a teacher account
 
 If you have **already begun work on a course using a personal Repl.it account** you should contact the program technology lead and work to get your account renamed. If at all possible do not use one account for more than one course.
