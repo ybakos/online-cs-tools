@@ -3,7 +3,7 @@ title: Repl.it Setup
 ---
 
 
-# Repl.it
+{% include icon-header.html title="Repl.it" image="image_exploration.png" %}
 
 [Repl.it](repl.it) is a tool that allows instructors to embed interactive code within web pages. It will work in Canvas, HTML pages, really anywhere that an iframe or oEmbed is supported.
 
