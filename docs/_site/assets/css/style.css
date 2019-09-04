@@ -133,16 +133,16 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (24px));
-  max-width: calc(800px - (24px));
+  max-width: -webkit-calc(1000px - (24px));
+  max-width: calc(1000px - (24px));
   margin-right: auto;
   margin-left: auto;
   padding-right: 12px;
   padding-left: 12px; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
     .wrapper {
-      max-width: -webkit-calc(800px - (24px * 2));
-      max-width: calc(800px - (24px * 2));
+      max-width: -webkit-calc(1000px - (24px * 2));
+      max-width: calc(1000px - (24px * 2));
       padding-right: 24px;
       padding-left: 24px; } }
 
@@ -208,20 +208,21 @@ table {
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     .site-title {
       padding-right: 45px; } }
   .site-title, .site-title:visited {
     color: #424242; }
 
 .site-nav {
-  position: absolute;
+  position: relative;
   top: 9px;
-  right: 12px;
+  left: 12px;
   background-color: #fdfdfd;
   border: 1px solid #e8e8e8;
   border-radius: 5px;
-  text-align: right; }
+  text-align: left;
+  display: inline-block; }
   .site-nav .nav-trigger {
     display: none; }
   .site-nav .menu-icon {
@@ -235,9 +236,10 @@ table {
       fill: #424242; }
   .site-nav label[for="nav-trigger"] {
     display: block;
-    float: right;
-    width: 36px;
+    float: left;
+    padding: 0 5px 0 5px;
     height: 36px;
+    line-height: 36px;
     z-index: 2;
     cursor: pointer; }
   .site-nav input ~ .trigger {
@@ -245,33 +247,28 @@ table {
     display: none; }
   .site-nav input:checked ~ .trigger {
     display: block;
+    margin-top: 36px;
+    position: absolute;
+    background: #e8e8e8;
+    border: 1px;
+    border-color: #424242;
+    border-style: solid;
     padding-bottom: 5px; }
+  .site-nav input:checked ~ label span .menu-closed {
+    display: none; }
+  .site-nav input ~ label span .menu-open {
+    display: none; }
+  .site-nav input:checked ~ label span .menu-open {
+    display: inline; }
   .site-nav .page-link {
     color: #111;
     line-height: 1.5;
     display: block;
     padding: 5px 10px;
-    margin-left: 20px; }
+    white-space: nowrap;
+    margin-left: 5px; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 0; }
-  @media screen and (min-width: 600px) {
-    .site-nav {
-      position: static;
-      float: right;
-      border: none;
-      background-color: inherit; }
-      .site-nav label[for="nav-trigger"] {
-        display: none; }
-      .site-nav .menu-icon {
-        display: none; }
-      .site-nav input ~ .trigger {
-        display: block; }
-      .site-nav .page-link {
-        display: inline;
-        padding: 0;
-        margin-left: auto; }
-        .site-nav .page-link:not(:last-child) {
-          margin-right: 20px; } }
 
 /**
  * Site footer
@@ -309,7 +306,7 @@ table {
   width: -webkit-calc(100% - (24px / 2));
   width: calc(100% - (24px / 2)); }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .footer-col-1 {
     width: -webkit-calc(35% - (24px / 2));
     width: calc(35% - (24px / 2)); }
@@ -321,7 +318,7 @@ table {
   .footer-col-3 {
     width: -webkit-calc(45% - (24px / 2));
     width: calc(45% - (24px / 2)); } }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .footer-col {
     float: left; } }
 /**
@@ -329,7 +326,7 @@ table {
  */
 .page-content {
   padding: 24px 0;
-  flex: 1 0 auto; }
+  flex: 1 1 0%; }
 
 .page-heading {
   font-size: 2rem; }
@@ -365,7 +362,7 @@ table {
   font-size: 2.625rem;
   letter-spacing: -1px;
   line-height: 1; }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
     .post-title,
     .post-content h1 {
       font-size: 2.625rem; } }
@@ -374,17 +371,17 @@ table {
   margin-bottom: 24px; }
   .post-content h2 {
     font-size: 1.75rem; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1000px) {
       .post-content h2 {
         font-size: 2rem; } }
   .post-content h3 {
     font-size: 1.375rem; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1000px) {
       .post-content h3 {
         font-size: 1.625rem; } }
   .post-content h4 {
     font-size: 1.125rem; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1000px) {
       .post-content h4 {
         font-size: 1.25rem; } }
 
